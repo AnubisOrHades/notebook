@@ -1,0 +1,33 @@
+/*取消所有内边距和外边距*/
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-size: 14px;
+}
+
+/*块级元素居中显示*/
+.center {
+    margin: 0 auto;
+}
+
+/*清除所有浮动*/
+.clear {
+    clear: both;
+}
+
+/*左浮动*/
+.fl {
+    float: left;
+}
+
+/*右浮动*/
+.fr {
+    float: right;
+}
+
+ul{
+  list-style: none;
+}
