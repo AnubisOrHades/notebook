@@ -2,7 +2,6 @@
   <div id="app">
     <!--父组件向子组件传递参数-->
     <nav-vue v-bind:nav_lis="nav_lis"></nav-vue>
-    <el-input></el-input>
     <!--<img src="./assets/logo.png">-->
     <router-view/>
     <!--<div class="clear"></div>-->
@@ -12,6 +11,7 @@
         <li><a href="/#/order">order</a></li>
         <li><a href="/#/order">order</a></li>
       </ul>
+      <input type="button" value="listen" @click="listen">
     </div>
   </div>
 </template>
@@ -19,6 +19,7 @@
 <script>
 // import orderVue from './components/order'
 // import Nav from './components/nav'
+import connect from './connector'
 
 import YearTable from 'element-ui/packages/date-picker/src/basic/year-table'
 export default {
@@ -38,6 +39,13 @@ export default {
         '客服中心',
         '联系投资者'
       ]
+    }
+  },
+  methods: {
+    listen () {
+      connect.$on('phone', function (msg) {
+        console.log(msg)
+      })
     }
   }
 }
