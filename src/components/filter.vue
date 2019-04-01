@@ -2,6 +2,7 @@
   <div class="filter center">
     <!--引用过滤器-->
     <p>{{text | fanzhuan}}</p>
+    <p>{{text | lis}}</p>
     <input type="text" v-model="text" >
   </div>
 </template>
@@ -28,7 +29,7 @@ export default {
   width: 800px;
 }
   .filter p{
-    width: 200px;
+    min-width: 200px;
     height: 50px;
     font-size: 30px;
     line-height: 50px;
