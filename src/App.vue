@@ -9,7 +9,7 @@
       <ul class="cnav">
         <li><a href="/#/">home</a></li>
         <li><a href="/#/order">order</a></li>
-        <li><a href="/#/order">order</a></li>
+        <li><a href="/#/filter">filter</a></li>
       </ul>
       <input type="button" value="listen" @click="listen">
     </div>

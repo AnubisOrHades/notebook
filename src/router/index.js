@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
 import nav from '@/components/nav'
 import order from '@/components/order'
+import filter from '@/components/filter'
 
 Vue.use(Router)
 
@@ -30,6 +31,14 @@ export default new Router({
       component: order,
       meta: {
         title: 'order'
+      }
+    },
+    {
+      path: '/filter',
+      name: 'filter',
+      component: filter,
+      meta: {
+        title: 'filter'
       }
     }
   ]
