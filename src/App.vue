@@ -8,8 +8,8 @@
     <div class="content">
       <ul class="cnav">
         <li><a href="/#/">home</a></li>
-        <li><a href="/#/order">order</a></li>
-        <li><a href="/#/filter">filter</a></li>
+        <!--动态拼接路由-->
+        <li v-for="(url,index) in urls" :key="index"><a :href="'/#/'+url">{{url}}</a></li>
       </ul>
       <input type="button" value="listen" @click="listen">
     </div>
@@ -38,6 +38,11 @@ export default {
         '关于',
         '客服中心',
         '联系投资者'
+      ],
+      urls: [
+        'order',
+        'filter',
+        'mintui'
       ]
     }
   },
