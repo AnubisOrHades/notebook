@@ -5,6 +5,7 @@ import nav from '@/components/nav'
 import order from '@/components/order'
 import filter from '@/components/filter'
 import mintui from '@/components/mintui'
+import element from '@/components/element'
 
 Vue.use(Router)
 
@@ -48,6 +49,14 @@ export default new Router({
       component: mintui,
       meta: {
         title: 'mintui'
+      }
+    },
+    {
+      path: '/element',
+      name: 'element',
+      component: element,
+      meta: {
+        title: 'element'
       }
     }
   ]

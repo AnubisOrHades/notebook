@@ -42,7 +42,8 @@ export default {
       urls: [
         'order',
         'filter',
-        'mintui'
+        'mintui',
+        'element'
       ]
     }
   },
