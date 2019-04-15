@@ -6,6 +6,7 @@ import order from '@/components/order'
 import filter from '@/components/filter'
 import mintui from '@/components/mintui'
 import element from '@/components/element'
+import api from '@/components/api'
 
 Vue.use(Router)
 
@@ -57,6 +58,14 @@ export default new Router({
       component: element,
       meta: {
         title: 'element'
+      }
+    },
+    {
+      path: '/api',
+      name: 'api',
+      component: api,
+      meta: {
+        title: 'api'
       }
     }
   ]

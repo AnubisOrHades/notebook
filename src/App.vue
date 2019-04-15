@@ -43,7 +43,8 @@ export default {
         'order',
         'filter',
         'mintui',
-        'element'
+        'element',
+        'api'
       ]
     }
   },
